@@ -34,7 +34,7 @@ export default function Navbar() {
             className="logo-icon"
           />
 
-          Evidence Vault
+          Evidence Protection System
 
         </Link>
 
