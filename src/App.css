@@ -1,0 +1,1406 @@
+html, body, #root{
+height:100%;
+margin:0;
+}
+
+.app-wrapper{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+.main-content{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+
+/* GLOBAL CARD */
+
+.cyber-card{
+
+background: rgba(255,255,255,0.05);
+
+border: 1px solid rgba(255,255,255,0.1);
+
+border-radius:12px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+/* CYBER BUTTON */
+
+.cyber-btn{
+
+background:#00e0ff;
+
+border:none;
+
+color:white;
+
+border-radius:25px;
+
+padding:10px 18px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.cyber-btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}
+
+/* TABLE THEME */
+
+.cyber-table{
+
+background:rgba(255,255,255,0.05);
+
+color:white;
+
+}
+
+
+/* =========================
+CYBER BLOCKCHAIN NAVBAR
+========================= */
+
+.navg{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 8%;
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(10px);
+
+border-bottom:1px solid rgba(255,255,255,0.1);
+
+position:relative;
+
+z-index:1000;
+}
+
+/* Logo */
+
+.logo a{
+
+text-decoration:none;
+
+font-size:22px;
+
+font-weight:600;
+
+color:#00e0ff;
+
+letter-spacing:1px;
+
+transition:0.3s;
+
+}
+
+.logo a:hover{
+
+color:#ffffff;
+
+}
+
+/* Links container */
+
+#links{
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+align-items:center;
+
+margin:0;
+
+padding:0;
+
+}
+
+/* Links */
+
+.link a{
+
+text-decoration:none;
+
+color:#ffffff;
+
+font-size:14px;
+
+position:relative;
+
+padding-bottom:4px;
+
+transition:0.3s;
+
+}
+
+/* Smooth underline animation */
+
+.link a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:0;
+
+width:0%;
+
+height:2px;
+
+background:#00e0ff;
+
+transition:0.35s ease;
+
+}
+
+.link a:hover::after{
+
+width:100%;
+
+}
+
+.link a:hover{
+
+color:#00e0ff;
+
+}
+
+
+/* ===============================
+CYBER LOGIN PAGE
+=============================== */
+
+.container.login{
+
+width:420px;
+
+margin:100px auto;
+
+padding:40px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.1);
+
+border-radius:12px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+color:#ffffff;
+
+}
+
+/* Title */
+
+.login-h1{
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:#00e0ff;
+
+font-weight:500;
+
+letter-spacing:1px;
+
+}
+
+/* Input groups */
+
+.input-login{
+
+margin-bottom:20px;
+
+}
+
+.input-login label{
+
+display:block;
+
+margin-bottom:6px;
+
+font-size:14px;
+
+color:#ffffff;
+
+}
+
+/* Inputs */
+
+.input-login input,
+#user-type{
+
+width:100%;
+
+padding:10px;
+
+border-radius:8px;
+
+border:1px solid rgba(255,255,255,0.15);
+
+background:rgba(255,255,255,0.08);
+
+color:#ffffff;
+
+outline:none;
+
+transition:0.3s;
+
+}
+
+/* Input focus glow */
+
+.input-login input:focus,
+#user-type:focus{
+
+border:1px solid #00e0ff;
+
+box-shadow:0 0 8px rgba(0,224,255,0.4);
+
+}
+
+/* Dropdown options */
+
+#user-type option{
+
+background:#203a43;
+
+color:#ffffff;
+
+}
+
+/* Button container */
+
+.login-button{
+
+margin-top:25px;
+
+text-align:center;
+
+}
+
+/* Button */
+
+.login-button button{
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:25px;
+
+background:#00e0ff;
+
+color:white;
+
+font-weight:500;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+/* Hover */
+
+.login-button button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}
+
+/* Spinner color */
+
+.custom-spinner .ant-spin-dot-item{
+
+background:#ffffff;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+GLOBAL CYBER BLOCKCHAIN THEME
+FOR ANT DESIGN
+========================= */
+
+/* Inputs */
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-select-selector{
+
+background:rgba(255,255,255,0.08) !important;
+
+border:1px solid rgba(255,255,255,0.15) !important;
+
+color:#ffffff !important;
+
+}
+
+.ant-input::placeholder{
+
+color:rgba(255,255,255,0.6) !important;
+
+}
+
+/* Dropdown */
+
+.ant-select-dropdown{
+
+background:#203a43 !important;
+
+}
+
+.ant-select-item{
+
+color:white !important;
+
+}
+
+.ant-select-item-option-selected{
+
+background:rgba(0,224,255,0.2) !important;
+
+}
+
+/* Buttons */
+
+.ant-btn{
+
+border-radius:25px !important;
+
+}
+
+.ant-btn-primary{
+
+background:#00e0ff !important;
+
+border:none !important;
+
+}
+
+.ant-btn-primary:hover{
+
+background:#00c7e6 !important;
+
+}
+
+/* Tables */
+
+.ant-table{
+
+background:rgba(255,255,255,0.05) !important;
+
+color:white !important;
+
+}
+
+.ant-table-thead > tr > th{
+
+background:rgba(255,255,255,0.08) !important;
+
+color:#00e0ff !important;
+
+border-bottom:1px solid rgba(255,255,255,0.15) !important;
+
+}
+
+.ant-table-tbody > tr > td{
+
+background:transparent !important;
+
+color:white !important;
+
+}
+
+.ant-table-tbody > tr:hover > td{
+
+background:rgba(255,255,255,0.05) !important;
+
+}
+
+/* Pagination */
+
+.ant-pagination-item{
+
+background:rgba(255,255,255,0.08) !important;
+
+border:none !important;
+
+}
+
+.ant-pagination-item a{
+
+color:white !important;
+
+}
+
+.ant-pagination-item-active{
+
+background:#00e0ff !important;
+
+}
+
+.ant-pagination-item-active a{
+
+color:white !important;
+
+}
+
+/* Tags */
+
+.ant-tag{
+
+border-radius:20px !important;
+
+}
+
+/* Cards */
+
+.ant-card{
+
+background:rgba(255,255,255,0.05) !important;
+
+border:1px solid rgba(255,255,255,0.1) !important;
+
+color:white !important;
+
+backdrop-filter:blur(10px);
+
+}
+
+/* Spinner */
+
+.ant-spin-dot-item{
+
+background:#00e0ff !important;
+
+}
+
+/* Message popup */
+
+.ant-message-notice-content{
+
+background:#203a43 !important;
+
+color:white !important;
+
+border-radius:8px;
+
+}
+
+/* manage user------------------------------- */
+
+
+/* =========================
+PAGE WRAPPER
+========================= */
+
+.page-wrapper{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+/* =========================
+PAGE CARD
+========================= */
+
+.page-card{
+
+width:420px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.1);
+
+border-radius:12px;
+
+padding:35px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+margin-top: 18px;
+
+}
+
+/* =========================
+TITLE
+========================= */
+
+.page-title{
+
+text-align:center;
+
+color:#00e0ff;
+
+margin-bottom:30px;
+
+font-weight:500;
+
+}
+
+/* =========================
+FORM FIELD
+========================= */
+
+.form-field{
+
+margin-bottom:20px;
+
+}
+
+.form-field label{
+
+display:block;
+
+margin-bottom:6px;
+
+font-size:14px;
+
+}
+
+/* =========================
+INPUTS
+========================= */
+
+.form-field input,
+.form-field select{
+
+width:100%;
+
+padding:10px;
+
+border-radius:8px;
+
+border:1px solid rgba(255,255,255,0.15);
+
+background:rgba(255,255,255,0.08);
+
+color:white;
+
+outline:none;
+
+}
+
+.form-field input:focus,
+.form-field select:focus{
+
+border:1px solid #00e0ff;
+
+box-shadow:0 0 6px rgba(0,224,255,0.4);
+
+}
+
+.form-field select option{
+
+background:#203a43;
+
+color:white;
+
+}
+
+/* =========================
+BUTTON
+========================= */
+
+.page-button{
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:25px;
+
+background:#00e0ff;
+
+color:white;
+
+cursor:pointer;
+
+font-weight:500;
+
+transition:0.3s;
+
+}
+
+.page-button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}
+
+
+/* ======================
+UPLOAD PAGE
+====================== */
+
+.upload-page{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.upload-card{
+
+width:420px;
+
+background:rgba(255,255,255,0.05);
+
+border:1px solid rgba(255,255,255,0.1);
+
+border-radius:12px;
+
+padding:35px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+.upload-title{
+
+text-align:center;
+
+color:#00e0ff;
+
+margin-bottom:30px;
+
+font-weight:500;
+
+}
+
+.upload-field{
+
+margin-bottom:20px;
+
+}
+
+.upload-field label{
+
+display:block;
+
+margin-bottom:6px;
+
+font-size:14px;
+
+}
+
+.upload-field input{
+
+width:100%;
+
+padding:10px;
+
+border-radius:8px;
+
+border:1px solid rgba(255,255,255,0.15);
+
+background:rgba(255,255,255,0.08);
+
+color:white;
+
+outline:none;
+
+}
+
+.upload-field input:focus{
+
+border:1px solid #00e0ff;
+
+box-shadow:0 0 6px rgba(0,224,255,0.4);
+
+}
+
+.upload-button{
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:25px;
+
+background:#00e0ff;
+
+color:white;
+
+cursor:pointer;
+
+font-weight:500;
+
+transition:0.3s;
+
+}
+
+.upload-button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}
+
+
+
+
+/* VIEW PAGE */
+
+.container{
+padding:60px 8%;
+}
+
+/* SEARCH BOX */
+
+.search-box{
+max-width:400px;
+margin:auto;
+display:flex;
+gap:10px;
+margin-bottom:40px;
+}
+
+.search-box input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:25px;
+outline:none;
+}
+
+.search-box button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#00e0ff;
+cursor:pointer;
+color:black;
+}
+
+/* TABLE */
+
+.table-container{
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+th{
+color:#00e0ff;
+}
+
+.view-link{
+color:#00e0ff;
+text-decoration:none;
+}
+
+.view-link:hover{
+text-decoration:underline;
+}
+
+
+
+/* LOGS PAGE */
+
+.container{
+padding:70px 8%;
+}
+
+/* SEARCH */
+
+.search-box{
+max-width:400px;
+margin:auto;
+display:flex;
+gap:10px;
+margin-bottom:40px;
+}
+
+.search-box input{
+flex:1;
+padding:12px;
+border-radius:25px;
+border:none;
+outline:none;
+}
+
+.search-box button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#00e0ff;
+cursor:pointer;
+color:white;
+}
+
+
+/* LANDING PAGE */
+
+.landing-page{
+color:white;
+}
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:100px 8%;
+flex-wrap:wrap;
+min-height:60vh;
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#00e0ff;
+}
+
+.hero-text p{
+opacity:0.85;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+display:flex;
+gap:15px;
+}
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+transition:0.3s;
+font-weight:500;
+}
+
+.btn-primary{
+background:#00e0ff;
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+box-shadow:0 6px 18px rgba(0,0,0,0.3);
+}
+
+.btn-secondary{
+background:transparent;
+border:1px solid rgba(255,255,255,0.15);
+color:white;
+}
+
+.btn-secondary:hover{
+background:rgba(255,255,255,0.05);
+}
+
+/* FEATURES */
+
+.features{
+padding:70px 8%;
+text-align:center;
+}
+
+.features h2{
+margin-bottom:50px;
+font-size:36px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+.feature-card{
+padding:30px;
+border-radius:14px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-6px);
+}
+
+.feature-card h3{
+color:#00e0ff;
+margin-bottom:12px;
+}
+
+/* FOOTER */
+
+.landing-footer{
+text-align:center;
+padding:20px;
+margin-top:60px;
+border-top:1px solid rgba(255,255,255,0.1);
+opacity:0.7;
+}
+
+/* EMPTY HOME WHEN LOGGED IN */
+
+.home-empty{
+min-height:80vh;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+}
+
+/* =========================
+NAVBAR LOGO CONTROL
+========================= */
+
+/* Container (logo + text alignment) */
+.logo-link{
+display:flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+color:#00e0ff;
+font-weight:600;
+font-size:22px;
+}
+
+/* Logo Image */
+.logo-icon{
+width:38px;        /* 🔹 Change this to control size */
+height:36px;       /* 🔹 Keep equal for perfect square */
+object-fit:contain;
+}
+
+/* Optional: Responsive smaller logo */
+@media(max-width:768px){
+  .logo-icon{
+    width:26px;
+    height:26px;
+  }
+
+  .logo-link{
+    font-size:18px;
+  }
+}
+
+
+/* =========================
+DASHBOARD (AFTER LOGIN)
+========================= */
+
+.home-dashboard{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:calc(100vh - 70px); /* adjust if navbar height differs */
+}
+
+/* =========================
+CUBE GIF CONTROL
+========================= */
+
+.cube-gif{
+width:220px;        /* 🔹 control size here */
+height:auto;
+object-fit:contain;
+
+/* smooth floating feel */
+animation: floatCube 3s ease-in-out infinite;
+
+/* optional glow for cyber theme */
+filter: drop-shadow(0 0 12px rgba(0,224,255,0.6));
+}
+
+/* floating animation */
+
+/* @keyframes floatCube{
+0%{
+transform: translateY(0px);
+}
+50%{
+transform: translateY(-12px);
+}
+100%{
+transform: translateY(0px);
+}
+} */
+
+/* responsive */
+
+@media(max-width:768px){
+.cube-gif{
+width:160px;
+}
+}
+
+
+
+
+/* =========================
+MINIMAL PAGINATION (BOTTOM RIGHT)
+========================= */
+
+.table-container{
+position:relative; /* important */
+}
+
+/* Pagination wrapper */
+
+.table-pagination{
+position:absolute;
+bottom:10px;
+right:221px;
+
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+/* Buttons */
+
+.page-nav{
+background:rgba(255,255,255,0.08);
+border:none;
+color:white;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover */
+
+.page-nav:hover{
+background:#00e0ff;
+color:black;
+}
+
+/* Disabled */
+
+.page-nav:disabled{
+opacity:0.3;
+cursor:not-allowed;
+}
+
+/* Current page */
+
+.page-current{
+font-weight:600;
+color:#00e0ff;
+}
+
+
+
+
+/* DASHBOARD CARDS */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background: #111;
+  border: 1px solid #00ff9f;
+  text-align: center;
+}
+
+.card h3 {
+  color: #00ff9f;
+}
+
+.card p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+
+
+/* ========================================================== Whole overjew design  ===================================================================================================*/
+/* ============================= */
+/* 🔷 ROOT */
+/* ============================= */
+.ov-container {
+  position: relative;   /* 🔥 IMPORTANT for absolute children */
+  width: 100%;
+  padding: 20px;
+}
+
+/* ============================= */
+/* 🔷 CARDS (FREE POSITIONING) */
+/* ============================= */
+.ov-cards-section {
+  position: absolute;   /* 🔥 BREAK FROM FLOW */
+  top: 10px;            /* 🔥 CONTROL UP/DOWN */
+  left: 20px;           /* 🔥 CONTROL LEFT/RIGHT */
+
+  display: flex;
+  gap: 20px;
+}
+
+/* CARD */
+.ov-card {
+  width: 180px;   /* adjust freely */
+  height: 90px;
+
+  padding: 10px;
+
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+
+  margin-top: -107px;
+  margin-left: 14px;
+}
+
+/* ============================= */
+/* 🔷 TABLE SECTION */
+/* ============================= */
+.ov-table-section {
+  margin-top: 120px;   /* 🔥 IMPORTANT: push table below cards */
+  width: 100%;
+}
+
+/* ============================= */
+/* 🔷 TABS */
+/* ============================= */
+.ov-tabs {
+  display: flex;
+  gap: 30px;
+  margin-bottom: -22px;
+  /* text-align: center; */
+  padding-left: 618px;
+}
+
+.ov-tab {
+  cursor: pointer;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.ov-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+}
+
+/* TAB BASE */
+.ov-tab {
+  cursor: pointer;              /* ✅ makes cursor clickable */
+  padding-bottom: 4px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.ov-tab:hover {
+  opacity: 0.8;                /* subtle feedback */
+}
+
+/* ACTIVE TAB */
+.ov-tab.active {
+  font-weight: 600;
+}
+
+/* UNDERLINE */
+.ov-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+}
+
+/* ============================= */
+/* 🔷 TABLE AREA */
+/* ============================= */
+.ov-table-area {
+  position: relative;
+  min-height: 250px;
+}
+
+/* ============================= */
+/* 🔷 TABLE SWITCH */
+/* ============================= */
+.ov-table-box {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.ov-table-box.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ============================= */
+/* 🔷 GLASS TABLE CONTAINER */
+/* ============================= */
+.ov-table-container {
+  width: 80%;
+  margin-left: 135px;
+  margin-top: 53px;
+
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ============================= */
+/* 🔷 TABLE */
+/* ============================= */
+.ov-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* CELLS */
+.ov-table th,
+.ov-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* HEADER COLOR */
+.ov-table th {
+  color: #00e0ff;
+}
+
+
+
+.ov-pagination{
+position:absolute;
+bottom:-40px;
+right:221px;
+
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+
+
+/* Buttons */
+
+.ov-page-btn{
+background:rgba(255,255,255,0.08);
+border:none;
+color:white;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover */
+
+.ov-page-btn:hover{
+background:#00e0ff;
+color:black;
+}
