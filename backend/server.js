@@ -1,4 +1,4 @@
-//D:\PROJECTS\EVIDENCE\Evidence_update_uniqueID_automaticID\evidence-vault - Copy (2)\backend\server.js
+//D:\PROJECTS\EVIDENCE\Evidence_update_uniqueID_automaticID\evidence-protection-system-using-blockchain - Copy (2)\backend\server.js
 
 const { connectDB } = require("./database.js");
 require("dotenv").config();
@@ -29,11 +29,7 @@ const {
   fetch_caseName
 } = require("./database.js");
 
-// const {
-//   blockchainInsert,
-//   getEvidencesLink,
-//   chainOfCustody,
-// } = require("./blockchainConnect.js");
+
 
 const {
   blockchainInsert,

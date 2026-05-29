@@ -37,7 +37,7 @@ const web3StorageUpload = async (fullFilePath) => {
     const result = await pinata.pinFileToIPFS(stream, {
       pinataMetadata: {
         name: path.basename(fullFilePath),
-        keyvalues: { uploadedBy: "evidence-vault" },
+        keyvalues: { uploadedBy: "evidence-protection-system-using-blockchain" },
       },
     });
 

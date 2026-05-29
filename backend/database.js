@@ -1,6 +1,4 @@
-//D:\PROJECTS\EVIDENCE\Evidence_update_uniqueID_automaticID\evidence-vault - Copy (2)\backend\database.js
-
-
+//D:\PROJECTS\EVIDENCE\Evidence_update_uniqueID_automaticID\evidence-protection-system-using-blockchain - Copy (2)\backend\database.js
 
 const { MongoClient } = require("mongodb");
 require("dotenv").config({ path: "../.env" });
